@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TO DO App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div id="main-container">
+        <h3>TO DO List</h3>
+        <div id="todo-container"></div>
+        <div id="button-container">
+            <button id="add-item" onclick="addItem()">+</button>
+        </div>
+    </div>
+    <div id="background-modal"></div>
+    <div id="modal">
+        <div id="modal-header">
+            <button id="close-modal-btn" onclick="closeModal()">X</button>
+        </div>
+        <div id="main-modal">
+            <p>Write your task here:</p>
+            <input type="text" name="Task" id="new-task-input" placeholder="New task" maxlength="38" >
+        </div>
+        <div id="submit-container">
+            <button id="submit-btn" onclick="submitBtn()">Submit</button>
+        </div>
+    </div>
+</body>
+</html>
